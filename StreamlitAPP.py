@@ -10,11 +10,13 @@ from src.mcqgenerator.mcqgenerator import generate_evaluate_chain
 from src.mcqgenerator.logger import logging
 
 # loading json file
-with open('C:\Data\Soft Dev\AI\LLMs\GenerativeAICourse\Projects\mcqgen\Response.json', 'r') as file:
+with open('Response.json', 'r') as file:
     RESPONSE_JSON = json.load(file)
+# with open('C:\Data\Soft Dev\AI\LLMs\GenerativeAICourse\Projects\mcqgen\Response.json', 'r') as file:
+#     RESPONSE_JSON = json.load(file)
 
 # Creating a title for the app
-st.title("MCQs Creator Application with LangChain")
+st.title("MCQs Creator Application with LangChain 🦜⛓️")
 
 # Creating a form using st.form
 with st.form("user_inputs"):
